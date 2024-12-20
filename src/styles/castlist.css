@@ -1,0 +1,33 @@
+/* Cast list styling for horizontal scrolling */
+.cast-list {
+    width: 80%;
+    margin: 20px auto;
+    background-color: #000; /* Black background */
+    color: #fff; /* White text for better contrast */
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow effect */
+  }
+  
+  .cast-grid {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    padding: 10px 0;
+  }
+  
+  .cast-card {
+    flex: 0 0 auto;
+    width: 150px;
+    text-align: center;
+  }
+  
+  .cast-image {
+    width: 100%;
+    border-radius: 8px;
+  }
+  
+  .cast-info {
+    margin-top: 10px;
+  }
+  

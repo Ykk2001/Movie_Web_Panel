@@ -1,0 +1,46 @@
+
+.movie-list {
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping to the next line if needed */
+    gap: 16px; /* Adds spacing between MovieCards */
+    justify-content: center; /* Centers the cards horizontally */
+    background-color: #000; /* Black background for the movie list */
+    padding: 20px; /* Optional: Adds padding around the list */
+  }
+  
+  .movie-card {
+    flex: 0 1 calc(25% - 16px); /* Adjusts width: 4 cards per row with a gap */
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px;
+    background-color: #1a1a1a; /* Dark grey background for the card */
+    border: 1px solid #333; /* Optional: Darker border for card */
+    border-radius: 8px; /* Rounded corners for card */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for the card */
+  
+  }
+  
+  .movie-card img {
+    max-width: 100%; /* Ensures image doesn't overflow */
+    height: auto; /* Maintains aspect ratio */
+    border-radius: 4px; /* Rounded image corners */
+    margin-bottom: 8px;
+  }
+  
+  .movie-card-title {
+    font-size: 1.2rem; /* Slightly larger title font size */
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 4px;
+    color: #fff; /* White font color for the title */
+  }
+  
+  .movie-card-rating {
+    font-size: 1rem; /* Adjust rating font size */
+    color: #fff; /* White font color for the rating */
+    text-align: center;
+    margin-top: 0;
+  }
+  

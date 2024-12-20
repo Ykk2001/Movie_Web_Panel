@@ -1,0 +1,88 @@
+/* Navbar Container */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #000; /* Black background */
+  color: #fff; /* White text */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* Subtle shadow for navbar */
+}
+
+/* Logo */
+.navbar-logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+  padding: 5px 10px;
+  transition: color 0.3s ease;
+}
+
+.navbar-logo:hover {
+  color: #ff6347; /* Change logo color on hover */
+}
+
+/* Navigation Links */
+.navbar a {
+  color: #888; /* Grey color for the links */
+  text-decoration: none;
+  font-size: 1rem;
+  margin: 0 15px;
+  transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+  color: #ff6347; /* Hover color */
+}
+
+/* Search Form */
+.navbar form {
+  display: flex;
+  align-items: center;
+  border-radius: 8px;
+}
+
+.navbar input {
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  margin-right: 10px;
+  font-size: 1rem;
+}
+
+.navbar button {
+  background-color: #aaa; /* Grey color for the search button */
+  color: #fff;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.navbar button:hover {
+  background-color: #888; /* Darker grey color on hover */
+}
+
+.navbar input:focus, .navbar button:focus {
+  outline: none;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar a {
+    margin: 5px 0;
+  }
+
+  .navbar form {
+    width: 100%;
+    margin-top: 10px;
+  }
+}
